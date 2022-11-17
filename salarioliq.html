@@ -1,0 +1,20 @@
+<script>
+//Entrada
+
+const Vhora = parseFloat(prompt("Digite quanto recebe por hora:"))
+const Hdia = parseFloat(prompt( "Digite quantas horas você trabalha no dia"))
+
+//Processamento
+
+const salarioBruto = Vhora*Hdia*30
+const Inss = salarioBruto* 0.08
+const Ir = salarioBruto * 0.11
+const Sindicato = salarioBruto * 0.05
+
+const salarioLiq = salarioBruto - (Inss+Ir+Sindicato)
+
+
+//Saída
+
+alert ("Seu salário líquido é de " + salarioLiq.toFixed(2))
+</script>

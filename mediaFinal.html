@@ -1,0 +1,19 @@
+<script>
+//Entrada
+
+const Nota1 = parseFloat(prompt("Digite a primeira atividade do primeiro trimestre:"))
+const Atv1 = parseFloat(prompt("Digite aqui a nota da segunda atividade do primeiro trimestre:"))
+const Nota2 = parseFloat(prompt("Digite aqui primeira atividade do segundo trimestre:"))
+const Atv2 = parseFloat(prompt("Digite aqui a segunda ativdade do segundo trimestre:"))
+
+//Processamento
+
+const media1 = Nota1* 0.7 + Atv1* 0.3
+const media2 = Nota2* 0.7 + Atv2 * 0.3
+const mediaT = (media1+media2)/2
+
+//Saída
+
+alert("a media final do aluno foi " + mediaT.toFixed(2))
+
+</script>
